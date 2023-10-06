@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" /> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <title>Digital Growth Marketing</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+      
+      .navbar {
+        background-color: #580a58;
+      }
+
+      .navbar-brand {
+        display: flex;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+      }
+
+      .navbar-brand img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+
+      .nav-link {
+        color: #ccc !important;
+      }
+
+      .image-container {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+
+      .image-container img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        width: 400px;
+        height: 650px;
+      }
+
+      .l-box {
+        margin-top: 5%;
+        margin-left: 10%;
+        font-size: x-large;
+      }
+
+      .h1 {
+        padding: 10px;
+        font-size: 50px;
+        color: #530c53;
+        text-align: center;
+        margin-top: 20vh;
+        transform: translateY(-50%);
+      }
+
+      .d1 {
+        margin: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .content-section {
+        margin: 40px 0;
+      }
+
+      .service {
+        margin-bottom: 40px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+      }
+
+      .service-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .service-description {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .campaign {
+        margin-bottom: 40px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+      }
+
+      .campaign-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .campaign-details {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .campaign-details strong {
+        font-weight: bold;
+      }
+
+      .campaign-details ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      .campaign-details ul li {
+        margin-bottom: 5px;
+      }
+
+      #inquiry-form-box {
+        border: 1px solid #ccc;
+        padding: 20px;
+        width: 80%;
+        margin: 20px auto;
+        background-color: #f9f9f9;
+      }
+
+      #contact-form label {
+        display: block;
+        margin-left: 10px;
+      }
+
+      #contact-form input[type="text"],
+      #contact-form input[type="email"],
+      #contact-form textarea {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin: 10px auto;
+      }
+
+      #contact-form button {
+        background-color: #530c53;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin: 10px auto;
+      }
+
+      #response {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .footer {
+        background-color: #580a58;
+        color: white;
+        padding: 10px 0;
+      }
+
+      .footer span {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .image-container {
+          display: none;
+        }
+
+        .l-box {
+          margin-left: 5%;
+        }
+
+        .h1 {
+          margin-top: 10px;
+        }
+
+        .d1 {
+          margin: 10px;
+        }
+
+        #inquiry-form-box {
+          width: 90%;
+        }
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="favicon.png" width="50" height="50" alt="Logo">
+            <span class="text-light">Digital Growth Marketing</span>
+        </a>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="image-container">
+    <img src="down1.png" alt="Image">
+</div>
+
+<div class="l-box">
+    Unlock the power of digital <br>
+    marketing to drive growth,<br>
+    engage customers,<br>
+    and achieve your business goals.
+</div>
+
+<div class="l-box">
+    <p>
+        Innovation needs to be part of your culture.<br>
+        Consumers are transforming faster than we are, <br>
+        and if we don’t catch up, <br>
+        we’re in trouble.
+    </p>
+</div>
+
+<div><img src="down.png" style="max-width: 100%; height: auto;"></div>
+
+<h1 class="h1">ABOUT US</h1>
+
+<div class="d1">
+    In the bustling heart of the city, a group of passionate and forward-thinking individuals came together with a shared vision: to empower businesses with the digital tools they need to flourish in the online world. Thus, Digital Growth Marketing was born.<br><br>Our story begins with the founder, Sarah Reynolds, a digital marketing maven who recognized the transformative power of the internet in shaping businesses' destinies. Having worked for years in various marketing roles, she saw a gap in the market—businesses struggling to navigate the ever-evolving digital landscape. Armed with a deep understanding of SEO, social media strategies, and cutting-edge technologies, Sarah set out to create a company that would bridge this gap and help businesses harness the full potential of the digital real. From the early days in a cozy loft office, the Digital Growth Marketing team quickly gained a reputation for their innovative approach and dedication to client success.
+</div>
+
+<section id="about" class="content-section">
+  <div class="container">
+    <div class="service">
+      <h2 class="service-title">Search Engine Optimization (SEO)</h2>
+      <p class="service-description">
+        Improve your online visibility and organic search rankings with our data-driven SEO strategies.
+      </p>
+    </div>
+    <div class="service">
+      <h2 class="service-title">Social Media Marketing</h2>
+      <p class="service-description">
+        Engage and connect with your target audience on social media platforms, driving brand awareness and conversions.
+      </p>
+    </div>
+    <div class="service">
+      <h2 class="service-title">Content Creation</h2>
+      <p class="service-description">
+        Craft compelling and valuable content that resonates with your audience, establishing your authority in the industry.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="content-section">
+  <div class="container">
+    <h1 class="h1">PORTFOLIO</h1>
+    <div class="campaign">
+      <h2 class="campaign-title">Campaign: BakedDelights Bakery</h2>
+      <div class="campaign-details">
+        <p>
+          <strong>Objective:</strong> Increase online visibility and drive foot traffic to a local bakery.
+        </p>
+        <p>
+          <strong>Strategy:</strong>
+          <ul>
+            <li>Conducted a comprehensive SEO audit and keyword research.</li>
+            <li>Revamped the bakery's website with optimized content and visuals.</li>
+            <li>Launched targeted local SEO campaigns for location-based searches.</li>
+          </ul>
+        </p>
+        <p>
+          <strong>Results:</strong>
+          <ul>
+            <li>Organic website traffic increased by 70% within three months.</li>
+            <li>Google Maps searches for the bakery's location increased by 50%.</li>
+            <li>Social media engagement surged by 120%, leading to increased followers and brand recognition.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div class="campaign">
+      <h2 class="campaign-title">Campaign: TechX Innovations</h2>
+      <div class="campaign-details">
+        <p>
+          <strong>Objective:</strong> Establish an online presence for a tech startup and attract potential investors.
+        </p>
+        <p>
+          <strong>Strategy:</strong>
+          <ul>
+            <li>Designed a modern and responsive website highlighting innovative products.</li>
+            <li>Developed thought leadership content including blog posts and whitepapers.</li>
+            <li>Launched targeted Google Ads and LinkedIn campaigns for industry professionals.</li>
+          </ul>
+        </p>
+        <p>
+          <strong>Results:</strong>
+          <ul>
+            <li>Website traffic grew by 150%, with increased engagement.</li>
+            <li>Generated 25% more investor inquiries through targeted campaigns.</li>
+            <li>Startup gained recognition as a player in the tech sector, attracting media coverage.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div class="campaign">
+      <h2 class="campaign-title">Campaign: Wanderlust Travel Agency</h2>
+      <div class="campaign-details">
+        <p>
+          <strong>Objective:</strong> Drive bookings and increase brand awareness for a travel agency.
+        </p>
+        <p>
+          <strong>Strategy:</strong>
+          <ul>
+            <li>Developed an immersive website showcasing stunning travel destinations.</li>
+            <li>Created engaging travel guides, videos, and blog content.</li>
+            <li>Leveraged social media influencer partnerships for increased brand visibility.</li>
+          </ul>
+        </p>
+        <p>
+          <strong>Results:</strong>
+          <ul>
+            <li>Online bookings increased by 120% over a six-month period.</li>
+            <li>Social media engagement soared, resulting in a 60% increase in followers.</li>
+            <li>The agency gained recognition as a go-to resource for curated travel experiences.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div class="campaign">
+      <h2 class="campaign-title">Campaign: HealthPlus Fitness App</h2>
+      <div class="campaign-details">
+        <p>
+          <strong>Objective:</strong> Drive app downloads and user engagement for a health and fitness app.
+        </p>
+        <p>
+          <strong>Strategy:</strong>
+          <ul>
+            <li>Created a user-friendly app interface and intuitive design.</li>
+            <li>Developed valuable fitness tips, workout routines, and nutrition content.</li>
+            <li>Launched multi-channel marketing campaigns, including social media promotions.</li>
+          </ul>
+        </p>
+        <p>
+          <strong>Results:</strong>
+          <ul>
+            <li>App downloads exceeded projections by 150% within the first quarter.</li>
+            <li>User engagement metrics indicated a 200% increase in active users.</li>
+            <li>The app established itself as a trusted fitness companion, driving positive reviews.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h1 class="h1">CONTACT US</h1>
+  <div id="inquiry-form-box">
+    <form id="contact-form" action="#" method="post">
+      <label for="name">Name:</label>  
+      <input type="text" id="name" name="name" required>
+      <br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <br><br>
+      
+      <button type="submit">Submit</button>
+      <br><br>
+    </form>
+    <div id="response" style="display: none;">
+      <p>Thanks for your response!</p>
+    </div>
+  </div>
+</section>
+<br><br><br>
+<footer class="footer text-center">
+  <div class="container">
+      <span>&copy; 2023 Digital Growth Marketing. All Rights Reserved.</span>
+  </div>
+</footer>
+
+<script>
+  // Handle form submission
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the default form submission
+      // Here, you can perform any necessary validation and submit data to your server.
+      // For simplicity, we'll just hide the form and display the "thanks" message.
+      document.getElementById("contact-form").style.display = "none";
+      document.getElementById("response").style.display = "block";
+  });
+</script>
+
+</body>
+</html>
